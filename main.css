@@ -4,7 +4,7 @@ body {
     background: lightblue;
 }
 .navbar {
-    background:skyblue;
+    background:black;
 }
 .nav-link,
 .navbar-brand {
@@ -32,5 +32,21 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.description h1 {
+    color: white;
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
