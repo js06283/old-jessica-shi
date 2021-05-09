@@ -7,7 +7,7 @@ h1{
 body {
     padding: 0;
     margin: 0;
-    background: lightgrey;
+    background: lightcyan;
 }
 .navbar {
     background:black;
@@ -27,7 +27,7 @@ body {
     justify-content: flex-end;
 }
 .header {
-    background-image: url('images/header-background.jpg');
+    background-image: url('images/header-background1.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -38,11 +38,11 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.7);
+    /* background: rgba(0, 0, 0, 0.1); */
 }
 
 .description {
-    left: 50%;
+    left: 30%;
     position: absolute;
     top: 45%;
     transform: translate(-50%, -55%);
