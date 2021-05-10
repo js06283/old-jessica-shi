@@ -5,39 +5,51 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
         crossorigin="anonymous">
         <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="main.css">
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script> 
+
+        <link rel="stylesheet" type="text/css" href="/main.css">
         <title>Jessica Shi</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+        
     </head>
-    
+
     <body>
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">JS</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Coding</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Art and Photography</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <div id="header"></div>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#">
+                <img src="/images/jessica-shi.png" width="120" height="80" alt="">
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/coding.html">Coding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/art.html">Art and Photography</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
 
     <header class="page-header header container-fluid">
         <div class="overlay"></div>
@@ -49,7 +61,7 @@
     </header>
 
 <br></br>
-<h1>
+<h1 class="heading">
     Resume
 </h1>
 <br></br>
@@ -103,6 +115,20 @@
 					<h5>WORK</h5>
 				</div>
 				<!-- EDIT: work line 1 -->
+                <div class="col-lg-6">
+					<p class="tight"><t><b>U.S. Census Bureau</b></t><br/>
+						 <i>Software Engineering Civic Digital Fellow w/ Coding it Forward</i><br/>
+					</p>
+					<p><more></more></p>
+				</div>
+                
+				<div class="col-lg-3">
+					<p><sm>JUNE 2021 - PRESENT </sm></p>
+				</div>
+
+                <div class="col-lg-2 col-lg-offset-1">
+				</div>
+
 				<div class="col-lg-6">
 					<p class="tight"><t><b>Complex Resilient Intelligent Systems Laboratory</b></t><br/>
 						 <i>Research Assistant</i><br/>
@@ -238,49 +264,38 @@
 		<br>
 	</div><!--/.container -->
 
-
-<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
-	<div id="footwrap" class="footer">
-		<div class="container">
-			<div class="row">
-			
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>CONTACT</h5>
-				</div>
-				<!-- EDIT: email -->
-				<div class="col-lg-6">
-					<p><t>Email</t><br/>
-						<a href="mailto:jjs2295@columbia.edu" class="mail">jjs2295@columbia.edu</a> <br/>
-					</p>
-					<!-- EDIT: address -->
-					{% comment %} <p><t>Address</t><br/>
-						123 Some St. <br/>
-						City, State 01234 <br/>
-						United States of America<br/>
-					</p> {% endcomment %}
-					<!-- EDIT: phone number -->
-					{% comment %} <p><t>Phone</t><br/>
-						<a href="tel:2345678901" class="tel">(234) 567-8901</a> <br/>
-					</p> {% endcomment %}
-				</div>
-				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						{% comment %} <a href="#"><i class="icon-dribbble"></i></a> {% endcomment %}
-						<a href="#"><i class="icon-twitter"></i></a>
-						<a href="#"><i class="icon-facebook"></i></a>
-						<a href="#"><i class="icon-linkedin"></i></a>
-						<!--<a href="#"><i class="icon-github"></i></a>-->
-					</p>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     </body>
+
+    <footer>
+        <div id="footwrap" class="footer">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-lg-2 col-lg-offset-1">
+                        <h5>CONTACT</h5>
+                    </div>
+                <div class="col-lg-6">
+                    <p><t>Email</t><br/>
+                        <a href="mailto:jjs2295@columbia.edu" class="mail">jjs2295@columbia.edu</a> <br/>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <p><sm>SOCIAL LINKS</sm></p>
+                    <p>
+                        <!-- EDIT: Social Links. Replace # with your URL for each -->
+                        <a href="https://www.facebook.com/jessicashi605/"><img src="/images/facebook.png" width=30 height=30></a>
+                        <a href="https://www.linkedin.com/in/jessicashi605/"><img src="/images/linkedin.png" width=40 height=30></a>
+                        <a href="https://www.youtube.com/channel/UCPONIb772SedVvb6Dqkd1yw"><img src="/images/youtube.png" width=40 height=30></a>
+                        <a href="https://github.com/js06283/"><img src="/images/github.png" width=40 height=30></a>
+                    </p>
+                </div>
+                <div id="footer"></div>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                <script src="main.js"></script>
+            </footer>
     
 </html>
