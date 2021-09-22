@@ -90,7 +90,7 @@ body {
   
 .footer p {
     color: white;
-    }
+}
   
 .footer h5 {
     color: white;
@@ -119,6 +119,7 @@ code {
     article > p {
       margin-left: 3rem;
     }
+}
 
 .center-split {
     --center-split-max-width: 30vw;
