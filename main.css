@@ -19,7 +19,7 @@ body {
 .navbar-brand {
     color: #fff;
     cursor: pointer;
-    
+    float:none
 }
 .nav-link {
     margin-right: 1em !important;
