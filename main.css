@@ -31,7 +31,7 @@ body {
     justify-content: flex-end;
 }
 .name-bar{
-    color:#000;
+    background-color:#000;
 }
 .header {
     background-image: url('images/header-background1.png');
