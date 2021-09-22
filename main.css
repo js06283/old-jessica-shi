@@ -88,57 +88,84 @@ body {
     padding-bottom: 50px;
   }
   
-  .footer p {
+.footer p {
+    color: white;
+    }
+  
+.footer h5 {
     color: white;
   }
   
-  .footer h5 {
-    color: white;
-  }
-  
-  .footer t {
+.footer t {
     font-weight: 700;
   }
   
   /* social icons: */
-  .footer i {
+.footer i {
     padding-right: 8px;
     /*color: #1abc9c;*/
   }
+
+code {
+    font-size: 1.2em;
+    border: 1px solid #c1c1c1;
+    white-space: pre;
+    padding: 2px;
+    font-weight: 700;
+  }
   
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+@media (min-width: 720px) {
+    article > h1,
+    article > p {
+      margin-left: 3rem;
+    }
+
+.center-split {
+    --center-split-max-width: 30vw;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
-}
+.center-split > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.5rem;
+  }
+  
+  .center-split > img,
+  .center-split > picture,
+  .center-split > video {
+    display: block;
+    padding: 0;
+    object-fit: cover;
+  }
 
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
-}
-
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
+  @media (min-width: 720px) {
+    /* [1] */
+    .center-split {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      align-items: stretch;
+    }
+  
+    /* [2] */
+    .center-split > * > * {
+      max-width: var(--center-split-max-width);
+    }
+  
+    /* [3] */
+    .center-split > *:nth-child(odd) > * {
+      margin: 0 0 0 auto;
+    }
+  
+    .center-split > *:nth-child(even) > * {
+      margin: 0 auto 0 0;
+    }
+  
+    /* [4] */
+    .center-split > img,
+    .center-split > picture,
+    .center-split > video {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
