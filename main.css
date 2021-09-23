@@ -216,7 +216,7 @@ code {
         overflow:hidden;
         display: flex;
         width: 100%;
-        height: 20%;
+        height: 15%;
         background:black;
         align-items:center;
         justify-content: space-between;
@@ -243,6 +243,9 @@ code {
       /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
       .sticky + .content {
         padding-top: 60px;
+      }
+      .spacer{
+          font-size:0.0001rem;
       }
   }
   
